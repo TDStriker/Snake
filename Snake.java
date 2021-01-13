@@ -10,8 +10,6 @@ import java.util.ArrayList;
 
 import javax.swing.JFrame;
 
-//import Wrappers.MyColor;
-
 public class Snake extends JFrame implements KeyListener{
 	final static int NORTH = 0;
 	final static int EAST = 1;
@@ -30,6 +28,8 @@ public class Snake extends JFrame implements KeyListener{
 	protected int yoff = 42;    // init y-cord of maze
 	protected Graphics g;
 	protected int dtime = 30;
+	
+	//Board colors
 	protected Color wallcolor = Color.black;
 	protected Color pathcolor = Color.white;
 	protected Color dotcolor = Color.yellow;
@@ -54,8 +54,8 @@ public class Snake extends JFrame implements KeyListener{
 		Snake game = new Snake(17,41,41);
 		game.setup();
 		
-//		game.play();
-		game.twoPlay();
+		game.play();
+// 		game.twoPlay();
 	}
 	
 	public Snake(int bh0, int mh0, int mw0) {
